@@ -2,9 +2,11 @@ package com.social.data.repository;
 
 
 
-import com.social.model.Post;
+import com.social.data.model.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface PostRepository extends JpaRepository<Post, Integer> {
     Post findPostById(int posId);
 

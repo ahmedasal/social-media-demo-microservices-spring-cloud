@@ -2,8 +2,8 @@ package com.social.feed.service;
 
 
 
-import com.social.model.Post;
-import jakarta.persistence.EntityManager;
+import com.social.data.model.Post;
+import javax.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import java.util.List;
 @Service
 public class WallService {
     @Autowired
-    PostService postService;
+    private PostService postService;
 
 
     public List<Post>getWallPosts(EntityManager em, int userId, int offset, int noOfRows) {

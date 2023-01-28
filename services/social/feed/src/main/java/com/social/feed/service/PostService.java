@@ -4,9 +4,9 @@ package com.social.feed.service;
 
 import com.social.data.repository.ImageRepository;
 import com.social.data.repository.PostRepository;
-import com.social.model.Image;
-import com.social.model.Post;
-import jakarta.persistence.EntityManager;
+import com.social.data.model.Image;
+import com.social.data.model.Post;
+import javax.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

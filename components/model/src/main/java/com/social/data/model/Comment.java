@@ -1,10 +1,10 @@
-package com.social.model;
+package com.social.data.model;
 
 
 import lombok.Getter;
 import lombok.Setter;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

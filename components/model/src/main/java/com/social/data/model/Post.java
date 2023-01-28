@@ -1,7 +1,7 @@
-package com.social.model;
+package com.social.data.model;
 
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
@@ -29,7 +29,7 @@ public class Post {
     //TODO lazy load
 
     // TODO Hibernate annotation
-    @OneToMany(mappedBy = "post") // , fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "post", fetch = FetchType.LAZY) // , fetch = FetchType.EAGER)
     List<Comment> comments;
     @Transient
     String username;
@@ -167,9 +167,6 @@ public class Post {
         return "Post{" +
                 "id=" + id +
                 ", post='" + post + '\'' +
-                ", postDate=" + postDate +
-                ", likesCount=" + likesCount +
-                ", commentsCount=" + commentsCount +
                 '}';
     }
 }

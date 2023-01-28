@@ -1,4 +1,4 @@
-package com.social.model;
+package com.social.data.model;
 
 import java.util.ArrayList;
 

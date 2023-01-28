@@ -1,7 +1,7 @@
-package com.social.model;
+package com.social.data.model;
 
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.*;
 

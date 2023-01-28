@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/services/social/authentication/pom.xml" />
         <option value="$PROJECT_DIR$/components/model/pom.xml" />
         <option value="$PROJECT_DIR$/framework/data/pom.xml" />
+        <option value="$PROJECT_DIR$/components/framework/pom.xml" />
+        <option value="$PROJECT_DIR$/services/system/gateway/pom.xml" />
       </list>
     </option>
   </component>

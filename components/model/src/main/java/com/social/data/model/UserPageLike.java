@@ -1,7 +1,7 @@
-package com.social.model;
+package com.social.data.model;
 
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import java.util.Date;
 @Entity
 public class UserPageLike {
