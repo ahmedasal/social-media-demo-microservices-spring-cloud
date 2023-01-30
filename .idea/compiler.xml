@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="feed" />
-        <module name="model" />
         <module name="framework" />
+        <module name="model" />
         <module name="discovery-service" />
         <module name="users" />
         <module name="gateway" />
@@ -24,6 +24,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="data" target="17" />
+      <module name="oauth-authorization-server" target="13" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -34,6 +35,7 @@
       <module name="framework" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="model" options="-parameters" />
+      <module name="oauth-authorization-server" options="-parameters" />
       <module name="users" options="-parameters" />
     </option>
   </component>

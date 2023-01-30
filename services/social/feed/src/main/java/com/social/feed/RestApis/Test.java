@@ -1,22 +1,24 @@
 package com.social.feed.RestApis;
 
 import com.social.data.model.Post;
-import com.social.data.model.User;
 import com.social.data.repository.ImageRepository;
 import com.social.data.repository.UserRepository;
 import com.social.feed.service.PostService;
 import com.social.feed.service.WallService;
 import lombok.RequiredArgsConstructor;
+import org.keycloak.KeycloakPrincipal;
+import org.keycloak.KeycloakSecurityContext;
+import org.keycloak.adapters.springsecurity.token.KeycloakAuthenticationToken;
+import org.keycloak.representations.IDToken;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import javax.annotation.security.RolesAllowed;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.security.Principal;
 import java.util.List;
 
 @RestController
@@ -43,6 +45,15 @@ public class Test {
     @GetMapping("/strings")
     @RolesAllowed("USER")
     public ResponseEntity<List<String>> getString(){
+        KeycloakAuthenticationToken authentication = (KeycloakAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
+        Principal principal = (Principal) authentication.getPrincipal();
+        String userIdByToken = "";
+        if (principal instanceof KeycloakPrincipal) {
+            KeycloakPrincipal<KeycloakSecurityContext> kPrincipal = (KeycloakPrincipal<KeycloakSecurityContext>) principal;
+            IDToken token = kPrincipal.getKeycloakSecurityContext().getToken();
+            userIdByToken = token.getSubject();
+            System.out.println(userIdByToken);
+        }
         return ResponseEntity.ok(List.of("ahmed", "mohamed","asal"));
     }
 }

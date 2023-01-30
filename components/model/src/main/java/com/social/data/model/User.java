@@ -18,7 +18,7 @@ public class User{
     String firstName;
 
     String secondName;
-    String password;
+
     String birthday;
     String email;
     @OneToMany
@@ -47,7 +47,6 @@ public class User{
         this.secondName = secondName;
         this.birthday = birthday;
         this.email = email;
-        this.password = password;
 
     }
 
@@ -99,13 +98,6 @@ public class User{
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
     public List<Comment> getComments() {
         return comments;
@@ -138,7 +130,6 @@ public class User{
                 ", username='" + username + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", secondName='" + secondName + '\'' +
-                ", password='" + password + '\'' +
                 ", birthday='" + birthday + '\'' +
                 ", email='" + email + '\'' +
 
