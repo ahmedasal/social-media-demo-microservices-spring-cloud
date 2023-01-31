@@ -45,15 +45,15 @@ public class Test {
     @GetMapping("/strings")
     @RolesAllowed("USER")
     public ResponseEntity<List<String>> getString(){
-        KeycloakAuthenticationToken authentication = (KeycloakAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
-        Principal principal = (Principal) authentication.getPrincipal();
-        String userIdByToken = "";
-        if (principal instanceof KeycloakPrincipal) {
-            KeycloakPrincipal<KeycloakSecurityContext> kPrincipal = (KeycloakPrincipal<KeycloakSecurityContext>) principal;
-            IDToken token = kPrincipal.getKeycloakSecurityContext().getToken();
-            userIdByToken = token.getSubject();
-            System.out.println(userIdByToken);
-        }
+//        KeycloakAuthenticationToken authentication = (KeycloakAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
+//        Principal principal = (Principal) authentication.getPrincipal();
+//        String userIdByToken = "";
+//        if (principal instanceof KeycloakPrincipal) {
+//            KeycloakPrincipal<KeycloakSecurityContext> kPrincipal = (KeycloakPrincipal<KeycloakSecurityContext>) principal;
+//            IDToken token = kPrincipal.getKeycloakSecurityContext().getToken();
+//            userIdByToken = token.getSubject();
+//            System.out.println(userIdByToken);
+//        }
         return ResponseEntity.ok(List.of("ahmed", "mohamed","asal"));
     }
 }
