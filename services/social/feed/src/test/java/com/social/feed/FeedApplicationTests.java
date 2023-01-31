@@ -1,12 +1,12 @@
 //package com.social.feed;
 //
-//import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.WallController;
 //import org.springframework.boot.test.context.SpringBootTest;
 //
 //@SpringBootTest
 //class FeedApplicationTests {
 //
-//	@Test
+//	@WallController
 //	void contextLoads() {
 //	}
 //

@@ -3,28 +3,23 @@ package com.social.feed.RestApis;
 import com.social.data.model.Post;
 import com.social.data.repository.ImageRepository;
 import com.social.data.repository.UserRepository;
+import com.social.feed.forms.PostForm;
 import com.social.feed.service.PostService;
 import com.social.feed.service.WallService;
 import lombok.RequiredArgsConstructor;
-import org.keycloak.KeycloakPrincipal;
-import org.keycloak.KeycloakSecurityContext;
-import org.keycloak.adapters.springsecurity.token.KeycloakAuthenticationToken;
-import org.keycloak.representations.IDToken;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.security.RolesAllowed;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import java.security.Principal;
 import java.util.List;
 
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
-public class Test {
+public class WallController {
 
     @PersistenceContext
     private EntityManager em;
@@ -35,9 +30,8 @@ public class Test {
     private final UserRepository userRepository;
 
     @GetMapping("/feed")
-    public List<Post> getWallApi() {
-
-        List<Post> wallPosts = this.wallService.getWallPosts(em,45, 0, 5);
+    public List<PostForm> getWallApi() {
+        List<PostForm> wallPosts = this.wallService.getWallPosts(em,45, 0, 5);
         System.out.println(wallPosts);
         return wallPosts;
     }

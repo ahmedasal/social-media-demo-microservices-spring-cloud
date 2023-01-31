@@ -30,7 +30,7 @@ import java.util.Date;
 import java.util.List;
 
 @Controller
-public class WallController {
+public class Test {
     @PersistenceContext
     private EntityManager em;
 
@@ -39,23 +39,23 @@ public class WallController {
     private final ImageRepository imageRepository;
     private final UserRepository userRepository;
 
-    public WallController(WallService wallService, PostService postService, ImageRepository imageRepository, UserRepository userRepository) {
+    public Test(WallService wallService, PostService postService, ImageRepository imageRepository, UserRepository userRepository) {
         this.wallService = wallService;
         this.postService = postService;
         this.imageRepository = imageRepository;
         this.userRepository = userRepository;
     }
 
-    @GetMapping("/wall")
-    public String getWall(Model model) {
-        User user = userRepository.findById(46).get();
-        System.out.println(user);
-        System.out.println(user.getId());
-        List<Post> wallPosts = this.wallService.getWallPosts(em, user.getId(), 0, 5);
-        model.addAttribute("username", user.getUsername());
-        model.addAttribute("wallPosts", wallPosts);
-        return "wallPage";
-    }
+//    @GetMapping("/wall")
+//    public String getWall(Model model) {
+//        User user = userRepository.findById(46).get();
+//        System.out.println(user);
+//        System.out.println(user.getId());
+//        List<Post> wallPosts = this.wallService.getWallPosts(em, user.getId(), 0, 5);
+//        model.addAttribute("username", user.getUsername());
+//        model.addAttribute("wallPosts", wallPosts);
+//        return "wallPage";
+//    }
 
     @PostMapping("/post")
     public ModelAndView addPost(@RequestParam("message") String postText, @RequestParam("photos") MultipartFile[] files, Model model) throws Exception {
