@@ -1,4 +1,4 @@
-package com.social.authentication;
+package com.social.users;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,13 +8,13 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@ComponentScan("com.social.authentication.*")
+@ComponentScan("com.social.users.*")
 @EnableJpaRepositories(basePackages = "com.social.data.repository")
 @EntityScan(basePackages = "com.social.data.model")
-public class AuthenticationApplication {
+public class UsersApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AuthenticationApplication.class, args);
+        SpringApplication.run(UsersApplication.class, args);
     }
 
 }

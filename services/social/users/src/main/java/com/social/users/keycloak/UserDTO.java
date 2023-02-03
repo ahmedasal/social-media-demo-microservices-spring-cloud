@@ -1,12 +1,8 @@
-package com.social.authentication.keycloak;
+package com.social.users.keycloak;
 
-import com.social.data.model.User;
-import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.Date;
 
 
 @AllArgsConstructor

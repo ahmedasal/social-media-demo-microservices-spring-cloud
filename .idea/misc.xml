@@ -3,7 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/data/repository" />
-    <file type="web" url="file://$PROJECT_DIR$/services/social/authentication" />
+    <file type="web" url="file://$PROJECT_DIR$/services/social/users" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

@@ -1,4 +1,4 @@
-package com.social.authentication;
+package com.social.users;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

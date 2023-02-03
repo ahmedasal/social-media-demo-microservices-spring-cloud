@@ -1,4 +1,4 @@
-package com.social.authentication.keycloak;
+package com.social.users.keycloak;
 
 import org.keycloak.representations.idm.CredentialRepresentation;
 

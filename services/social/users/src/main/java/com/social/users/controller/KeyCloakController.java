@@ -1,8 +1,8 @@
-package com.social.authentication.controller;
+package com.social.users.controller;
 
 
-import com.social.authentication.Service.KeycloakService;
-import com.social.authentication.keycloak.UserDTO;
+import com.social.users.Service.KeycloakService;
+import com.social.users.keycloak.UserDTO;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

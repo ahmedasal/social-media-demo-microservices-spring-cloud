@@ -18,7 +18,7 @@
     <modules>
         <module>components/model</module>
         <module>components/framework</module>
-        <module>services/social/authentication</module>
+        <module>services/social/users</module>
         <module>services/social/feed</module>
         <module>services/system/discovery-service</module>
         <module>services/system/gateway</module>

@@ -26,12 +26,12 @@ spring:
             - Path=/user/**
           filters:
             - RewritePath=/user/(?<segment>.*),/$\{segment}
-        - id: authenticationModule
-          uri: lb://authentication
+        - id: usersModule
+          uri: lb://users
           predicates:
-            - Path=/authentication/**
+            - Path=/users/**
           filters:
-            - RewritePath=/authentication/(?<segment>.*),/$\{segment}
+            - RewritePath=/users/(?<segment>.*),/$\{segment}
 
 management:
   endpoints:

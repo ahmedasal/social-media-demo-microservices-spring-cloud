@@ -1,8 +1,8 @@
-package com.social.authentication.Service;
+package com.social.users.Service;
 
-import com.social.authentication.keycloak.Credentials;
-import com.social.authentication.keycloak.KeycloakConfig;
-import com.social.authentication.keycloak.UserDTO;
+import com.social.users.keycloak.Credentials;
+import com.social.users.keycloak.KeycloakConfig;
+import com.social.users.keycloak.UserDTO;
 import com.social.data.model.User;
 import lombok.AllArgsConstructor;
 import org.keycloak.admin.client.resource.UsersResource;

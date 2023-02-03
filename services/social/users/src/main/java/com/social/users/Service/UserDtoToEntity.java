@@ -1,6 +1,6 @@
-package com.social.authentication.Service;
+package com.social.users.Service;
 
-import com.social.authentication.keycloak.UserDTO;
+import com.social.users.keycloak.UserDTO;
 import com.social.data.model.User;
 
 public class UserDtoToEntity {
