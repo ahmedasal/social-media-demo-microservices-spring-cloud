@@ -23,6 +23,7 @@
         <module>services/system/discovery-service</module>
         <module>services/system/gateway</module>
         <module>services/system/config-server</module>
+        <module>services/system/monitoring</module>
     </modules>
 
 

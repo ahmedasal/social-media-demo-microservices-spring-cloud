@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/components/framework/pom.xml" />
         <option value="$PROJECT_DIR$/services/system/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/services/system/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/services/system/monitoring/pom.xml" />
       </list>
     </option>
   </component>

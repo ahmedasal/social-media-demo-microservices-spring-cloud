@@ -1,0 +1,11 @@
+eureka:
+  client:
+    instance:
+      preferIpAddress: true
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+spring:
+  application:
+    name: monitoring
+server:
+  port: 3333

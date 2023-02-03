@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/components/framework/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/components/model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/components/model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitoring/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/social/authentication/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/social/authentication/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/social/feed/src/main/java" charset="UTF-8" />
@@ -16,6 +17,7 @@
     <file url="file://$PROJECT_DIR$/services/system/discovery-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/system/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/system/gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/services/system/monitoring/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

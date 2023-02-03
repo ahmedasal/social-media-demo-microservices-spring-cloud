@@ -11,6 +11,7 @@
         <module name="config-server" />
         <module name="framework" />
         <module name="model" />
+        <module name="monitoring" />
         <module name="discovery-service" />
         <module name="users" />
         <module name="gateway" />
@@ -37,6 +38,7 @@
       <module name="framework" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="model" options="-parameters" />
+      <module name="monitoring" options="-parameters" />
       <module name="oauth-authorization-server" options="-parameters" />
       <module name="users" options="-parameters" />
     </option>
