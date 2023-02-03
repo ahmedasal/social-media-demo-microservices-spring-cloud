@@ -22,6 +22,7 @@
         <module>services/social/feed</module>
         <module>services/system/discovery-service</module>
         <module>services/system/gateway</module>
+        <module>services/system/config-server</module>
     </modules>
 
 

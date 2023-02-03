@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="feed" />
+        <module name="config-server" />
         <module name="framework" />
         <module name="model" />
         <module name="discovery-service" />
@@ -29,6 +30,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
       <module name="data" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
       <module name="feed" options="-parameters" />

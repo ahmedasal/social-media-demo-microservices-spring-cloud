@@ -1,0 +1,29 @@
+eureka:
+  client:
+    instance:
+      preferIpAddress: true
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+keycloak:
+  auth-server-url: http://localhost:8080/
+  bearer-only: true
+  public-client: true
+  realm: social-media
+  resource: backend
+
+spring:
+  application:
+    name: feed
+  datasource:
+    password: test123
+    url: jdbc:mysql://localhost:3306/socialMediaApp
+    username: root
+  jackson:
+    serialization:
+      indent_output: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+server:
+  port: 8182
