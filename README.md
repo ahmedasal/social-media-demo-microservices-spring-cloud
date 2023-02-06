@@ -29,10 +29,11 @@ This architecture has already reported problems and replaced with a new architec
     java -jar feed-0.0.1-SNAPSHOT.jar
 ```
 
-# Endpoints
-Service | endpoint
-feed | http://localhost:9090/feed/feed
+## Endpoints
 
+Courses | Duration | Effort | Prerequisites | Discussion
+:-- | :--: | :--: | :--: | :--:
+[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) | 2 weeks | 12 hours/week | - | [chat](https://discord.gg/5FvKycS)
 
 
 
