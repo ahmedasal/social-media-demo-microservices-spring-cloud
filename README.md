@@ -31,9 +31,10 @@ This architecture has already reported problems and replaced with a new architec
 
 ## Endpoints
 
-Courses | Duration | Effort | Prerequisites | Discussion
-:-- | :--: | :--: | :--: | :--:
-[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) | 2 weeks | 12 hours/week | - | [chat](https://discord.gg/5FvKycS)
+Services | Endpoint
+:-- | :--:
+feed | http://localhost:9090/feed/feed
+feed | http://localhost:9090/feed/feed
 
 
 
