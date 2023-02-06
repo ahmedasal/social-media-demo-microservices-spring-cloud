@@ -9,6 +9,9 @@ Implementing social media app using old architecture using SQL database  and que
 This architecture has already reported problems and replaced with a new architecture [this project by mostafacs](https://github.com/mostafacs/social-media-quarkus-microservices-kubernetes).
 
 ## Project Dependency
+1. MySql Database.
+2. java version 17.
+
 
 
 
