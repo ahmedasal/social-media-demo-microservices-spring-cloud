@@ -35,7 +35,7 @@ Using keycloak v20.0.3 as authorization server.
 ## Endpoints
 
 Services | Endpoint | Description
-:-- | :--: | :--:
+:-- | :-- | :--
 Register user | http://localhost:9090/users/api/user | add user to keycloak
 Login user | http://localhost:9090/users/api/user/login | login user
 get user | http://localhost:9090/users/api/user/{userName} | get user from keycloak
