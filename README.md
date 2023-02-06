@@ -29,6 +29,10 @@ This architecture has already reported problems and replaced with a new architec
     java -jar feed-0.0.1-SNAPSHOT.jar
 ```
 
+# Endpoints
+Service | endpoint
+feed | http://localhost:9090/feed/feed
+
 
 
 
