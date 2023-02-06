@@ -6,7 +6,7 @@
 
 ## Description
     Implementing social media app using old architecture using SQL database  and queries to load user feed.
-    This architecture has already reported problems and replaced with a new architecture
+    This architecture has already reported problems and replaced with a new architecture.
 
 
 
