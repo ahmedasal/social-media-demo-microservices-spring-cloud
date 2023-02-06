@@ -32,9 +32,9 @@ This architecture has already reported problems and replaced with a new architec
 ## Endpoints
 
 Services | Endpoint
-:-- | :--:
+:-- | :-----------:
 feed | http://localhost:9090/feed/feed
-feed | http://localhost:9090/feed/feed
+
 
 
 
