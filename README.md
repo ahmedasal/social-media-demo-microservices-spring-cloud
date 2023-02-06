@@ -1,1 +1,2 @@
-# social-media-demo-microservices-spring-cloud
+# Social Media Demo
+
