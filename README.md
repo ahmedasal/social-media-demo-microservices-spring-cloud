@@ -12,6 +12,9 @@ This architecture has already reported problems and replaced with a new architec
 - MySql Database. 
 - java version 17.
 
+## Security
+Using keycloak v20.0.3 as authorization server.
+
 ## How to Run
 ```shell
     mvn clean install
@@ -32,9 +35,11 @@ This architecture has already reported problems and replaced with a new architec
 ## Endpoints
 
 Services | Endpoint | Description
-:-- | :--: | :--: 
-feed | http://localhost:9090/feed/feed | show feed of user
-
+:-- | :--: | :--:
+Register user | http://localhost:9090/users/api/user | add user to keycloak
+Login user | http://localhost:9090/users/api/user/login | login user
+get user | http://localhost:9090/users/api/user/{userName} | get user from keycloak
+feed | http://localhost:9090/feed/api/feed | show feed of user
 
 
 
