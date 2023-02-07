@@ -6,11 +6,13 @@ Learning microservices using spring cloud, database design and queries practice.
 
 ## Description
 Implementing social media app using old architecture using SQL database  and queries to load user feed.
-This architecture has already reported problems and replaced with a new architecture [this project by mostafacs](https://github.com/mostafacs/social-media-quarkus-microservices-kubernetes).
+This architecture has already reported problems as i used relational database query to get the user feed.
 
 ## Project Dependency
 - MySql Database. 
 - java version 17.
+- keycloak v20.0.3.
+- Spring Framework(boot, data, security, cloud, web).
 
 ## Security
 Using keycloak v20.0.3 as authorization server.
@@ -22,10 +24,10 @@ Using keycloak v20.0.3 as authorization server.
     java -jar config-server-0.0.1-SNAPSHOT.jar
     # run discovery service 
     java -jar discovery-service-0.0.1-SNAPSHOT.jar
-    # run gateway 
-    java -jar gateway-0.0.1-SNAPSHOT.jar
     # run monitoring
     java -jar monitoring-0.0.1-SNAPSHOT.jar
+    # run gateway 
+    java -jar gateway-0.0.1-SNAPSHOT.jar
     # run users service
     java -jar users-0.0.1-SNAPSHOT.jar
     # run feed service
