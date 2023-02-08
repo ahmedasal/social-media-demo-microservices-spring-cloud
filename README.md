@@ -10,7 +10,7 @@ This architecture has already reported problems as i used relational database qu
 
 ## Project Dependency
 - MySql Database. 
-- java version 17.
+- JDK version 17.
 - keycloak v20.0.3.
 - Spring Framework(boot, data, security, cloud, web).
 
